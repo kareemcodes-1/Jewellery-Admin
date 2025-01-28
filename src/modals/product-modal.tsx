@@ -143,6 +143,7 @@ const ProductModal = ({ setOpenDialog }: { setOpenDialog: () => void }) => {
               "Content-Type": "application/json",
             },
             body: JSON.stringify(product),
+            credentials: "include",
           });
 
           const data: Product = await res.json();

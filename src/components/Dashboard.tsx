@@ -29,6 +29,7 @@ const Dashboard = () => {
         headers: {
           'Content-Type': 'application/json'
         },
+        
       });
       const ordersPromise = fetch(`${import.meta.env.VITE_SERVER_URL}/api/orders`, {
         method: "GET",

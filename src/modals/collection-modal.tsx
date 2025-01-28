@@ -109,6 +109,7 @@ const CollectionModal = ({setOpenDialog}: {setOpenDialog: () => void;}) => {
               "Content-Type": "application/json"
             },
             body: JSON.stringify(collection),
+            credentials: "include",
           });
 
           const data: Collection = await res.json();
